@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{  
+            cursor: none;
+            }
+            
+        body {
+            margin:0;
+            font-family: 'Dopis', sans-serif;
+            background-color: #fff;
+        }
+        
+        .principal {margin-top: 20px;}
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-family: 'Dopis', sans-serif;
+            background-color: #f2fba2;
+            top: 0;
+            z-index: 999;
+        }
+
+         .left {
+            margin-left: 200px;
+             width: 30%;
+        }
+
+        .right {
+            text-align: right;
+            margin-right: 200px;
+            width: 70%;
+            padding-left: 50px;
+        }
+
+        
+        .left a {margin-left: -30px;}
+        
+        .left a, .right a {
+            color: #2a403a;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        .back-button {
+            color: #2a403a;
+            border: none;
+            font-size: 12px;
+            text-decoration: underline;
+        }
+        
+        container {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+        }
+        
+        .principal { 
+            margin-right: 200px;
+            margin-left: 200px; 
+        }
+        
+        img, video{
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+            
+        .rectangle {
+            width: 140px;
+            height: 30px;
+            border: 1px solid #2a403a;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Dopis', sans-serif;
+            font-size: 16px;
+        }
+        
+        footer {
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        font-family: 'Dopis', sans-serif;
+        }
+        
+    footer a {align-content: left;
+        text-decoration: none;
+        color: #2a403a;
+        }
+        
+    </style>
+
+    <header>
+        <div class="left"><a href="index.html"><b>ANA SUTIL</b></a></div>
+        <div class="right">
+            <a href="about.html">ABOUT</a>
+            <a href="work.html"><b>WORK</b></a>
+        </div>
+    </header>
+    
+<body>
+<div class="principal">
+<a href="work.html" class="back-button"> ❮ back to work </a>
+    </div>
+    
+<container>
+<div class="left">
+    <h2>AIR CONDITIONER CONTROL</h2>
+    <div class="rectangle">product design</div>
+    <p>Development of an interactive control for air conditioning equipment. <br> Design project with an approach centered on the product design and interaction design dimension, with a pretext to address concepts of sustainability, ergonomics, integration with the surrounding space, production technologies, modeling, rapid prototyping techniques and interaction flows.</p>
+    <span style="font-size: smaller;">w/ Ana Pacheco, Ana Pinto and Katherine Gonzalez</span>
+</div>
+
+<div class="right">
+<video src="anasutil-website-images/otel%20animation%20logo.mp4" controls autoplay loop muted style="width: 100%; margin-top: 20px;"></video>
+    </div>
+    </container>
+
+<div class="principal">
+<img src="frontal%20context.jpg" alt="" style="width: 100%;">
+<img src="Otel-09.jpg" alt="" style="width: 100%;">
+<img src="otel_expl.jpeg" alt="" style="width: 100%;">
+<img src="Otel-09%20-%20C%C3%B3pia.jpg" alt="" style="width: 100%;">
+<video src="otel_interface.mp4" controls autoplay loop muted style="width: 100%; margin-top: 20px;"></video>
+<img src="frontal%20context%20night.jpg" alt="" style="width: 100%;">
+    </div>
+    </body>
+
+<footer>
+    <p>Let's work together!
+    <br>
+           <a style="font-size: smaller;" href="mailto:a.sutil@ua.pt">CONTACT / </a>
+        <a style="font-size: smaller;" href="https://www.linkedin.com/in/ana-sutil/">LINKEDIN /</a>
+        <a style="font-size: smaller;" href="https://www.behance.net/anasutil">BEHANCE </a>
+    
+    <p style="font-size: smaller;">Thank you for your time! <br> © 2024 ANA SUTIL</p>
+    </footer>
+
+<style>
+    .magnet {
+        width: 20px;
+        height: 20px;
+        background-color: #2a403a;
+        position: fixed;
+        top: -10px; /* Adjust to center cursor */
+        left: -10px; /* Adjust to center cursor */
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.12s;
+        z-index: 999;
+    }
+</style>
+
+<body> <div class="magnet"></div> </body>
+<script>
+    function toggleDropdown() {
+            var content = document.getElementById("dropdownContent");
+            content.classList.toggle("show");
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const magnet = document.querySelector('.magnet');
+
+            document.addEventListener('mousemove', function(e) {
+                magnet.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+        });
+    
+    
+    </script>
+    </head>
+</html>
+

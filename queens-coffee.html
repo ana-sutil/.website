@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    </head>
+    <style>
+        *{  
+            cursor: none;
+            }
+            
+        body {
+            margin-left: 200px;
+            margin-right: 200px;
+            margin:0;
+            font-family: 'Dopis', sans-serif;
+            background-color: #fff;
+        }
+        
+        .principal {
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-family: 'Dopis', sans-serif;
+            background-color: #f2fba2;
+            top: 0;
+            z-index: 999;
+        }
+        
+        .left, .right {
+            margin-left: 200px;
+            text-align: left;
+            width: 30%;
+        }
+
+        .right {
+            text-align: right;
+            margin-right: 200px;
+            width: 70%;
+        }
+
+        
+        .left a {margin-left: -30px;}
+        
+        .left a, .right a {
+            color: #2a403a;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        .back-button {
+            color: #2a403a;
+            border: none;
+            font-size: 12px;
+            text-decoration: underline;
+            margin-left: 10px;
+        }
+        
+        img {width: 100%;
+            margin-top: 40px;
+            border-radius: 15px;}
+        
+            
+        .rectangle {
+            width: 140px;
+            height: 30px;
+            border: 1px solid #2a403a;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Dopis', sans-serif;
+            font-size: 16px;
+        }
+        
+        .container {
+            display: flex; /* Use flexbox */
+        }
+        
+        .column {
+            flex: 1; /* Each column takes equal space */
+            padding: 10px; /* Add some padding for spacing */
+        }
+        
+    </style>
+
+<body>
+    
+<header>
+        <div class="left"><a href="index.html"><b>ANA SUTIL</b></a></div>
+        <div class="right">
+            <a href="about.html">ABOUT</a>
+            <a href="work.html"><b>WORK</b></a>
+        </div>
+    </header>
+
+<div class="principal">
+<a href="work.html" class="back-button"> ❮ back to work </a>
+
+<div class="container">
+    <div class="column">
+        <h2>QUEENS COFFEE</h2>
+    <div class="rectangle">product design</div>
+    <p>A manual coffee machine that epitomizes elegance, luxury and regality, taken to the modern and minimal, designed to be integrated into a large, minimalist coffee lover´s kitchen, becoming the center of attention in the place where is found.
+"Queen's Coffee" is not merely a coffee maker, it's a comprehensive coffee experience, a cherished ritual woven into the fabric of your day. It brings the ambiance of a premium coffee shop right into the comfort of your home, making each coffee moment a significant highlight in your daily routine.
+    <br><br><span style="font-size: smaller;">with Lília Amaro and Rita Figueiredo</span>
+     <br><br><br><span style="font-size: smaller; "> ✨ Nomination for the “And The Winner Is 2023” award, <br> a design awards gala, in the prototype category </span>
+
+    
+    </div>
+    <div class="column">
+        <img src="1_QC.jpg" alt="" style="width: 100%">
+
+    </div>
+    <div class="column">
+        <img src="2_QC.jpg" alt="" style="width: 100%">
+    </div>
+</div>
+    
+        <img src="Idelization_QC.jpg" alt="" style="width: 100%">
+    <br><span style="font-size: smaller;">➔ idealization </span>
+        <img src="Inspirations_QC.jpg" alt="" style="width: 100%">
+    <br><span style="font-size: smaller;">➔ inspirations</span>
+    <img src="Sketch%202_G11-P1-E1-7.jpg" alt="" style="width: 100%">
+    <br><span style="font-size: smaller;">➔ sketches </span>
+        <img src="Solutions_QC.jpg" alt="" style="width: 100%">
+    <br><span style="font-size: smaller;"> ➔ the solution </span>
+        <img src="3_QC.jpg" alt="" style="width: 100%">
+    <img src="poster_QC.png" alt="" style="width: 100%">
+        </div>
+    </body>
+
+<style>
+    
+        footer {
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        font-family: 'Dopis', sans-serif;
+        }
+        
+    footer a {align-content: left;
+        text-decoration: none;
+        color: #2a403a;
+        }
+</style>
+
+<footer>
+    <p>Let's work together!
+    <br>
+           <a style="font-size: smaller;" href="mailto:a.sutil@ua.pt">CONTACT / </a>
+        <a style="font-size: smaller;" href="https://www.linkedin.com/in/ana-sutil/">LINKEDIN /</a>
+        <a style="font-size: smaller;" href="https://www.behance.net/anasutil">BEHANCE </a>
+    
+    <p style="font-size: smaller;">Thank you for your time! <br> © 2024 ANA SUTIL</p>
+    </footer>
+
+<style>
+    .magnet {
+        width: 20px;
+        height: 20px;
+        background-color: #2a403a;
+        position: fixed;
+        top: -10px; /* Adjust to center cursor */
+        left: -10px; /* Adjust to center cursor */
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.12s;
+        z-index: 999;
+    }
+</style>
+
+<body> <div class="magnet"></div> </body>
+<script>
+    function toggleDropdown() {
+            var content = document.getElementById("dropdownContent");
+            content.classList.toggle("show");
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const magnet = document.querySelector('.magnet');
+
+            document.addEventListener('mousemove', function(e) {
+                magnet.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+        });
+    
+    
+    </script>
+</html>

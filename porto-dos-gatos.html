@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{  
+            cursor: none;
+            }
+            
+        body {
+            margin:0;
+            font-family: 'Dopis', sans-serif;
+            background-color: #fff;
+        }
+        
+        .principal {margin-top: 20px;}
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-family: 'Dopis', sans-serif;
+            background-color: #f2fba2;
+            top: 0;
+            z-index: 999;
+        }
+        
+        .left, .right {
+            margin-left: 200px;
+            text-align: left;
+            width: 30%;
+        }
+
+        .right {
+            text-align: right;
+            margin-right: 200px;
+            width: 70%;
+        }
+
+        
+        .left a {margin-left: -30px;}
+        
+        .left a, .right a {
+            color: #2a403a;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        .back-button {
+            color: #2a403a;
+            border: none;
+            font-size: 12px;
+            text-decoration: underline;
+        }
+        
+        container {
+            display: flex;
+            justify-content: space-between;
+            align-items: top;
+        }
+        
+        .principal { 
+            margin-right: 200px;
+            margin-left: 200px; 
+        }
+        
+        img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 15px;
+        }
+            
+        .rectangle {
+            width: 140px;
+            height: 30px;
+            border: 1px solid #2a403a;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Dopis', sans-serif;
+            font-size: 16px;
+        }
+        
+        footer {
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        font-family: 'Dopis', sans-serif;
+        }
+        
+    footer a {align-content: left;
+        text-decoration: none;
+        color: #2a403a;
+        }
+        
+    </style>
+
+    <header>
+        <div class="left"><a href="index.html"><b>ANA SUTIL</b></a></div>
+        <div class="right">
+            <a href="about.html">ABOUT</a>
+            <a href="work.html"><b>WORK</b></a>
+        </div>
+    </header>
+    
+<body>
+<div class="principal">
+<a href="work.html" class="back-button"> ❮ back to work </a>
+    </div>
+    
+<container>
+<div class="left">
+    <h2>PORTO DOS GATOS</h2>
+    <div class="rectangle">graphic design</div>
+    <p>This establishment introduces a fresh and innovative concept. Operating as a cafeteria, it provides patrons with an assortment of daily meals, snacks, coffee, and more. Notably, Porto dos Gatos offers an exceptional feature - the presence of cats within the premises. Customers are afforded the opportunity to interact with these feline companions during their visit. In fact, those inclined can even choose to adopt these cats as part of their experience at the café.</p>
+</div>
+
+<div class="right">
+<img src="main%20porto%20dos%20gatos.jpg" alt="" style="width: 100%; transform: rotate(-1deg); margin-top: 20px;">
+    </div>
+    </container>
+
+<div class="principal">
+<img src="porto-gatos.jpg" alt="" style="width: 100%;">
+    </div>
+    </body>
+
+<footer>
+    <p>Let's work together!
+    <br>
+           <a style="font-size: smaller;" href="mailto:a.sutil@ua.pt">CONTACT / </a>
+        <a style="font-size: smaller;" href="https://www.linkedin.com/in/ana-sutil/">LINKEDIN /</a>
+        <a style="font-size: smaller;" href="https://www.behance.net/anasutil">BEHANCE </a>
+    
+    <p style="font-size: smaller;">Thank you for your time! <br> © 2024 ANA SUTIL</p>
+    </footer>
+
+<style>
+    .magnet {
+        background-color: #2a403a;
+        position: fixed;
+        top: -10px; /* Adjust to center cursor */
+        left: -10px; /* Adjust to center cursor */
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.12s;
+        z-index: 999;
+    }
+</style>
+
+<style>
+    .magnet {
+        width: 20px;
+        height: 20px;
+        background-color: #2a403a;
+        position: fixed;
+        top: -10px; /* Adjust to center cursor */
+        left: -10px; /* Adjust to center cursor */
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.12s;
+        z-index: 999;
+    }
+</style>
+
+<body> <div class="magnet"></div> </body>
+<script>
+    function toggleDropdown() {
+            var content = document.getElementById("dropdownContent");
+            content.classList.toggle("show");
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const magnet = document.querySelector('.magnet');
+
+            document.addEventListener('mousemove', function(e) {
+                magnet.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            });
+        });
+    
+    
+    </script>
+    </head>
+</html>
+

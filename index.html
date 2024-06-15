@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ana Sutil portfolio online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    
+<style>
+    
+    *{  
+            cursor: none;
+            }
+            
+         header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            font-family: 'Dopis', sans-serif;
+            background-color: #f2fba2;
+        }
+        
+        .left, .right {
+            text-align: left;
+            width: 30%;
+            margin-top: -8px;
+        }
+    
+        .right {
+            text-align: right;
+        }
+        
+        .left a {margin-left: -30px;}
+    
+        .left a, .right a {
+            color: #2a403a;
+            text-decoration: none;
+            padding: 10px;
+        }
+    </style>
+        
+    <header>
+    <div class="left"><a href="index.html"><b></b></a></div>
+    <div class="right">
+        <a href="about.html">ABOUT</a>
+        <a href="work.html">WORK</a>
+    </div>
+</header>
+
+
+<style>
+      
+        body {
+            margin-left: 200px;
+            margin-right: 200px;
+            font-family: 'Dopis', sans-serif;
+            background-color: #f2fba2;
+            color: #2a403a;}
+    
+    
+    </style>
+</head>
+    
+<body>
+    <ana>
+<p style="font-size: 200px; text-align: left; margin: 200px 0 20;"> <b>ANA SUTIL</b> </p>   </ana> 
+<style>
+    
+    footer {font-family: 'Dopis', sans-serif;
+            background-color: #f2fba2;
+            color: #2a403a;
+            padding: 20px;
+            text-align: left;
+        }
+        footer p {
+            text-align: left;
+        }
+        footer a {
+            color: #2a403a;
+            text-decoration: none;
+        }
+        footer a img {
+            width: 30px;
+            height: 30px;
+            vertical-align: left;
+        }
+     
+</style>
+
+<footer>
+    <div>
+        <p><b>Let's work together!</b> <br>
+                <a style="font-size: smaller;" href="mailto:a.sutil@ua.pt">CONTACT / </a>
+        <a style="font-size: smaller;" href="https://www.linkedin.com/in/ana-sutil/">LINKEDIN /</a>
+        <a style="font-size: smaller;" href="https://www.behance.net/anasutil">BEHANCE </a>
+            <br></div>
+    
+    </footer>
+    
+<style>
+    .magnet {
+        width: 20px;
+        height: 20px;
+        background-color: #2a403a;
+        position: fixed;
+        top: -10px; /* Adjust to center cursor */
+        left: -10px; /* Adjust to center cursor */
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.12s;
+        z-index: 999;
+    }
+</style>
+
+<body> <div class="magnet"></div> </body>
+<script>
+    function toggleDropdown() {
+            var content = document.getElementById("dropdownContent");
+            content.classList.toggle("show");
+        }
+        
+    document.addEventListener("DOMContentLoaded", function() {
+        const magnet = document.querySelector('.magnet');
+
+
+        document.addEventListener('mousemove', function(e) {
+            magnet.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    });
+</script>
+    </body>
+</html>
